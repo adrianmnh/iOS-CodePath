@@ -1,55 +1,28 @@
-# Pre-work - *Adrian's Tip Calculator*
+# flixter
 
-**Adrian's Tip Calculator** is a tip calculator application for iOS.
+flixter is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Submitted by: **Adrian Noa**
+---
 
-Time spent: **20** hours spent in total
-
-## User Stories
-
-The following **required** functionality is complete:
-
-* [X] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [X] User can select between tip percentages by tapping different values on the segmented control and the tip value is updated accordingly
-
-The following **optional** features are implemented:
-
-* [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [X] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
-
-The following **additional** features are implemented:
-
-- [X] Dark/Light mode on settings screen
-- [X] Custom Tip percentages on settings screen
-- [X] Restore to Defaults on settings screen
-- [X] Split X ways
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-![](https://i.imgur.com/f4Vds0E.gif)
+## Part 1
 
 
-## Notes
+#### REQUIRED (10pts)
+- [X] (2pts) User sees an app icon on the home screen and a styled launch screen.
+- [X] (5pts) User can view and scroll through a list of movies now playing in theaters.
+- [X] (3pts) User can view the movie poster image for each movie.
 
-Work in progress
+#### BONUS
+- [X] (2pt) User can view the app on various device sizes and orientations.
+- [ ] (1pt) Run your app on a real device.
 
-## License
+### App Walkthrough GIF
 
-    Copyright [2021] [Adrian Noa]
+![](https://i.imgur.com/nYjljMb.gif)
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+### Notes
+Finding the right margins and constraints for the Title and Synopsis labels was a challenge. 
+- The title could be 2 lines or longer, which displaces the paragraphs and leaves a space buffer between synopsis and title which isn't visually appealing
+- Contraints on the margins of labels require defining label size
+- Constraints on text labels are tricky, can't specifiy width and height because the amount of text on them is not defined or constant.
 
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
