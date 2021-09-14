@@ -62,29 +62,43 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
+        if(indexPath.row != movies.count){
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
+            
+            let movie = movies[indexPath.row]
+            let title = movie["title"] as! String
+            let synopsis = movie["overview"] as! String
+            
+    //        let file_path =
+    //
+            let baseUrl = "https://image.tmdb.org/t/p/w185"
+            let posterPath = movie["poster_path"] as! String
+            
+            let posterURL = URL(string: baseUrl + posterPath)
+            
+            
+            cell.posterView.af_setImage(withURL: posterURL!)
+            
+            
+            
+            
+            cell.titleLabel.text = title
+            cell.synopsisLabel.text = synopsis
+            
+            return cell
+            
+        }
         
-        let movie = movies[indexPath.row]
-        let title = movie["title"] as! String
-        let synopsis = movie["overview"] as! String
+        else {
+            
+            let cell = UITableViewCell()
+            
+            return cell
+            
+        }
         
-//        let file_path =
-//
-        let baseUrl = "https://image.tmdb.org/t/p/w185"
-        let posterPath = movie["poster_path"] as! String
-        
-        let posterURL = URL(string: baseUrl + posterPath)
-        
-        
-        cell.posterView.af_setImage(withURL: posterURL!)
-        
-        
-        
-        
-        cell.titleLabel.text = title
-        cell.synopsisLabel.text = synopsis
-        
-        return cell
+
     }
     
 
