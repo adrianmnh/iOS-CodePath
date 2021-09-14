@@ -18,7 +18,7 @@ flixter is an app that allows users to browse movies from the [The Movie Databas
 
 ### App Walkthrough GIF
 
-![](https://i.imgur.com/nYjljMb.gif)
+<img src='https://i.imgur.com/nYjljMb.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### Notes
 Finding the right margins and constraints for the Title and Synopsis labels was a challenge. 
