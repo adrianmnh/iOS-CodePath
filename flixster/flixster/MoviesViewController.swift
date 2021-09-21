@@ -11,15 +11,11 @@ import AlamofireImage
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
-
-        
-
-
-    
-    
     @IBOutlet var tableView: UITableView!
     
     var movies = [[String:Any]]() //creation of an array of dictionaries(hash maps)
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,8 +44,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                  
                  self.tableView.reloadData()
                  
-                 print(self.movies)
-
              }
         }
         task.resume()
@@ -74,16 +68,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     //
             let baseUrl = "https://image.tmdb.org/t/p/w185"
             let posterPath = movie["poster_path"] as! String
-            
             let posterURL = URL(string: baseUrl + posterPath)
-            
-            
             cell.posterView.af_setImage(withURL: posterURL!)
             
-            
-            
-            
             cell.titleLabel.text = title
+            
             cell.synopsisLabel.text = synopsis
             
             return cell
@@ -101,15 +90,27 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        print("Loading up the details screen")
+
+        
+        // 2 tasks:
+        // Find selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        
+        // Pass selected movie to detail view controller
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
-    */
+
 
 }
