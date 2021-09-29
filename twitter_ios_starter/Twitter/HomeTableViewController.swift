@@ -118,8 +118,16 @@ class HomeTableViewController: UITableViewController {
         cell.userNameLabel.text = (user["name"] as! String)
         cell.tweetContent.text = (tweetArray[indexPath.row]["text"] as! String)
         
+        let biggerImgUrl = (user["profile_image_url_https"] as! String).replacingOccurrences(of: "_normal", with: "")
+     
+      
         //set up image from dictionary.currentIndex
-        let imageUrl = URL(string: (user["profile_image_url_https"] as? String)! )
+//        let imageUrl = URL(string: (user["profile_image_url_https"] as? String)! )
+        let imageUrl = URL(string: biggerImgUrl)
+        
+        
+        
+        
 //        let imageUrl = URL(string: (user["profile_image_url_https"] as! String) )
         
 //        // setting a photo using Swift code and image URL
@@ -130,6 +138,8 @@ class HomeTableViewController: UITableViewController {
 //        }
         // setting image using alamo fire library and image URL
         cell.profileImageView.af_setImage(withURL: imageUrl!)
+        
+//        print(imageUrl)
         
         
         
