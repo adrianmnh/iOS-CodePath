@@ -18,9 +18,7 @@ flixter is an app that allows users to browse movies from the [The Movie Databas
 
 ### App Walkthrough GIF
 
-<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/flixster/walkthrough2-1.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
-<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/flixster/walkthrough2-2.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
-<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/flixster/walkthrough2-3.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
+<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/flixster/walkthrough2-1.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' /><img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/flixster/walkthrough2-2.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' /><img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/flixster/walkthrough2-3.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
 
 
 
