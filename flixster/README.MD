@@ -18,11 +18,16 @@ flixter is an app that allows users to browse movies from the [The Movie Databas
 
 ### App Walkthrough GIF
 
-<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/flixster/demo2.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/flixster/walkthrough2-1.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
+<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/flixster/walkthrough2-2.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
+<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/flixster/walkthrough2-3.gif?raw=true' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
+
+
+
+
 
 ### Notes
-- Movie detail view page does not look right in horizontal mode
-- Movie trailer controller to be added
+Describe any challenges encountered while building the app.
 
 ## Part 1
 
@@ -38,7 +43,7 @@ flixter is an app that allows users to browse movies from the [The Movie Databas
 
 ### App Walkthrough GIF
 
-<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/flixster/demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![](https://i.imgur.com/nYjljMb.gif)
 
 ### Notes
 Finding the right margins and constraints for the Title and Synopsis labels was a challenge. 
