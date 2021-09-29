@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--'just' the Tip!-->
+        <!--Adrian's Tip Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Prework" customModuleProvider="target" sceneMemberID="viewController">
@@ -180,7 +180,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4xf-a0-1cT" secondAttribute="bottom" constant="315" id="vSd-LU-2P0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="'just' the Tip!" id="UP7-e2-LVD">
+                    <navigationItem key="navigationItem" title="Adrian's Tip Calculator" id="UP7-e2-LVD">
                         <barButtonItem key="backBarButtonItem" title="Tipper" id="qXn-UL-ZFS">
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                         </barButtonItem>

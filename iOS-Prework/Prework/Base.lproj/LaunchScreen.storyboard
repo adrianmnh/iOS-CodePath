@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,10 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="Ity-dp-Ttk">
-                                <rect key="frame" x="50" y="150" width="275" height="296"/>
+                                <rect key="frame" x="50" y="150" width="275" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="HkR-n7-pda"/>
+                                    <constraint firstAttribute="height" constant="275" id="SxQ-FA-51g"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to 'just' the Tip!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLG-jO-iSg">
-                                <rect key="frame" x="70" y="446" width="235" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Adrian's Tip Calculator!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLG-jO-iSg">
+                                <rect key="frame" x="52" y="430" width="271.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,11 +33,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MLG-jO-iSg" secondAttribute="bottom" constant="200" id="89i-Rl-9dI"/>
                             <constraint firstItem="Ity-dp-Ttk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="JHC-VR-5d9"/>
-                            <constraint firstItem="MLG-jO-iSg" firstAttribute="top" secondItem="Ity-dp-Ttk" secondAttribute="bottom" id="abT-o0-6yi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MLG-jO-iSg" secondAttribute="trailing" constant="70" id="c6m-zz-SVP"/>
-                            <constraint firstItem="MLG-jO-iSg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="fsl-wG-a4w"/>
+                            <constraint firstItem="MLG-jO-iSg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Z28-yf-F0L"/>
+                            <constraint firstItem="MLG-jO-iSg" firstAttribute="top" secondItem="Ity-dp-Ttk" secondAttribute="bottom" constant="5" id="dcM-BU-1ku"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ity-dp-Ttk" secondAttribute="trailing" constant="50" id="isE-8A-4G6"/>
                             <constraint firstItem="Ity-dp-Ttk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ulC-bf-xRK"/>
                         </constraints>
