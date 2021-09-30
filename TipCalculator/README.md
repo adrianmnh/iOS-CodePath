@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="https://i.imgur.com/f4Vds0E.gif" title='Video Walkthrough' width='350' alt='Video Walkthrough' >
+<img src="https://github.com/nlawliet6/iOS-CodePath/blob/main/TipCalculator/walkthrough1.gif" width="200"><img src="https://github.com/nlawliet6/iOS-CodePath/blob/main/TipCalculator/walkthrough2.gif" width="200">
 
 
 ## Notes
