@@ -9,12 +9,34 @@
 import UIKit
 
 class TweetViewController: UIViewController {
-
+    
+    @IBOutlet var tweetTextField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tweetTextField.becomeFirstResponder()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true)
+    }
+
+    @IBAction func tweet(_ sender: Any) {
+        if (!tweetTextField.text.isEmpty){
+            TwitterAPICaller.client?.postTweet(tweetString: tweetTextField.text, success: {
+                self.dismiss(animated: true)
+            }, failure: { (error) in
+                print("Error posting tweet. \(error)")
+                self.dismiss(animated: true)
+            })
+        } else {
+            self.dismiss(animated: true)
+        }
+        
+    }
+    
     
 
     /*
