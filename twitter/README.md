@@ -27,7 +27,7 @@ Here's a walkthrough of implemented user stories:
 * User can Scroll "infinitely" or refresh feed 
 * User can Logout or stay Logged in
 
-<img src="https://raw.githubusercontent.com/nlawliet6/iOS-CodePath/main/twitter_ios_starter/walkthorugh1-1.gif" width="200"><img src="https://github.com/nlawliet6/iOS-CodePath/blob/main/twitter_ios_starter/walkthrough1-2.gif" width="200"><img src="https://github.com/nlawliet6/iOS-CodePath/blob/main/twitter_ios_starter/walkthrough1-3.gif" width="200">
+<img src="https://raw.githubusercontent.com/nlawliet6/iOS-CodePath/main/twitter/walkthorugh1-1.gif" width="200"><img src="https://github.com/nlawliet6/iOS-CodePath/blob/main/twitter/walkthrough1-2.gif" width="200"><img src="https://github.com/nlawliet6/iOS-CodePath/blob/main/twitter/walkthrough1-3.gif" width="200">
 
 
 
