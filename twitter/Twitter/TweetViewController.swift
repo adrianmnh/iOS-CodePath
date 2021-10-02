@@ -47,6 +47,9 @@ class TweetViewController: UIViewController, UITextViewDelegate {
         // TODO: Update Character Count Label
 
         // The new text should be allowed? True/False
+        
+        print(tweetTextView.text)
+
         return newText.count <= characterLimit
     }
     
