@@ -24,7 +24,7 @@ The following **bonus** features are implemented:
     
 Here's a walkthrough of implemented user stories:
 
-<img src="https://raw.githubusercontent.com/nlawliet6/iOS-CodePath/main/twitter/walkthorugh2-1.gif" width="200"><img src="https://raw.githubusercontent.com/nlawliet6/iOS-CodePath/main/twitter/walkthorugh2-2.gif" width="200">
+<img src=https://github.com/nlawliet6/iOS-CodePath/blob/main/twitter/walkthrough2-1.gif?raw=true width="200"><img src="https://github.com/nlawliet6/iOS-CodePath/blob/main/twitter/walkthrough2-2.gif?raw=true" width="200">
 
 # Part I
 
