@@ -256,18 +256,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yyP-mU-dfT">
-                                <rect key="frame" x="0.0" y="88" width="428" height="181"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="876-9G-9Sg">
+                                <rect key="frame" x="0.0" y="88" width="428" height="837"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvv-FG-KDS">
+                                        <rect key="frame" x="375.33333333333331" y="210" width="37.666666666666686" height="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yyP-mU-dfT">
+                                        <rect key="frame" x="5" y="5" width="418" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="fIe-k7-aVK"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Yvv-FG-KDS" firstAttribute="top" secondItem="yyP-mU-dfT" secondAttribute="bottom" constant="5" id="BpK-rL-Agy"/>
+                                    <constraint firstItem="yyP-mU-dfT" firstAttribute="leading" secondItem="876-9G-9Sg" secondAttribute="leading" constant="5" id="Frr-tW-BUa"/>
+                                    <constraint firstItem="yyP-mU-dfT" firstAttribute="top" secondItem="876-9G-9Sg" secondAttribute="top" constant="5" id="U1Y-dn-f2z"/>
+                                    <constraint firstAttribute="trailing" secondItem="yyP-mU-dfT" secondAttribute="trailing" constant="5" id="Wq2-zs-eMV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yvv-FG-KDS" secondAttribute="trailing" constant="15" id="nJ4-YU-k5Z"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zhb-Ky-C53"/>
                         <color key="backgroundColor" red="0.031372549020000001" green="0.62745098040000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="876-9G-9Sg" firstAttribute="trailing" secondItem="Zhb-Ky-C53" secondAttribute="trailing" id="7hh-hD-mIZ"/>
+                            <constraint firstItem="876-9G-9Sg" firstAttribute="top" secondItem="Zhb-Ky-C53" secondAttribute="top" id="C8u-sX-sse"/>
+                            <constraint firstItem="876-9G-9Sg" firstAttribute="leading" secondItem="Zhb-Ky-C53" secondAttribute="leading" id="aL7-3h-BF2"/>
+                            <constraint firstAttribute="bottom" secondItem="876-9G-9Sg" secondAttribute="bottom" constant="1" id="d8p-wB-tVm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rUO-j4-3ti">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="Udj-Qc-27x">
@@ -284,6 +311,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="countLabel" destination="Yvv-FG-KDS" id="GCD-li-qqR"/>
                         <outlet property="tweetTextView" destination="yyP-mU-dfT" id="IVi-fM-iw6"/>
                     </connections>
                 </viewController>
@@ -346,9 +374,6 @@
         <image name="favor-icon" width="30" height="30"/>
         <image name="reply-icon" width="30" height="30"/>
         <image name="retweet-icon" width="30" height="30"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
