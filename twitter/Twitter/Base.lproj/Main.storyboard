@@ -256,8 +256,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yyP-mU-dfT">
-                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yyP-mU-dfT">
+                                <rect key="frame" x="0.0" y="88" width="428" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -267,12 +268,6 @@
                         <viewLayoutGuide key="safeArea" id="Zhb-Ky-C53"/>
                         <color key="backgroundColor" red="0.031372549020000001" green="0.62745098040000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Zhb-Ky-C53" firstAttribute="trailing" secondItem="yyP-mU-dfT" secondAttribute="trailing" id="3qi-iw-3Vj"/>
-                            <constraint firstItem="yyP-mU-dfT" firstAttribute="top" secondItem="Zhb-Ky-C53" secondAttribute="top" id="Jmf-pW-ior"/>
-                            <constraint firstItem="Zhb-Ky-C53" firstAttribute="bottom" secondItem="yyP-mU-dfT" secondAttribute="bottom" id="R0l-x3-RbY"/>
-                            <constraint firstItem="yyP-mU-dfT" firstAttribute="leading" secondItem="Zhb-Ky-C53" secondAttribute="leading" id="qv9-sY-Tdu"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rUO-j4-3ti">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="Udj-Qc-27x">
@@ -289,7 +284,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tweetTextField" destination="yyP-mU-dfT" id="IVi-fM-iw6"/>
+                        <outlet property="tweetTextView" destination="yyP-mU-dfT" id="IVi-fM-iw6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LKk-GZ-t5u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
