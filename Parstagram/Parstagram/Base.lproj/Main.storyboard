@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MAl-5k-HrW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="zDe-E7-egH">
+            <objects>
+                <viewController id="MAl-5k-HrW" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o3I-x2-aUe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJk-gV-bpR">
+                                <rect key="frame" x="45" y="499.5" width="96" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hGu-hv-5m6">
+                                <rect key="frame" x="167.5" y="432" width="201.5" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="iHM-kf-5k6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xtr-St-xdp">
+                                <rect key="frame" x="168" y="496" width="201" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="i5o-oI-A7X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="instagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="nNe-iF-ArP">
+                                <rect key="frame" x="79.5" y="244" width="255" height="108"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjf-A3-6Z2">
+                                <rect key="frame" x="45" y="440" width="102.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xcB-eY-DiQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xcB-eY-DiQ" firstAttribute="trailing" secondItem="hGu-hv-5m6" secondAttribute="trailing" constant="45" id="4Rb-mJ-vCI"/>
+                            <constraint firstItem="hGu-hv-5m6" firstAttribute="leading" secondItem="tjf-A3-6Z2" secondAttribute="trailing" constant="20" id="Dh2-p7-5AN"/>
+                            <constraint firstItem="gJk-gV-bpR" firstAttribute="leading" secondItem="xcB-eY-DiQ" secondAttribute="leading" constant="45" id="ICd-Dg-BZy"/>
+                            <constraint firstItem="xtr-St-xdp" firstAttribute="top" secondItem="hGu-hv-5m6" secondAttribute="bottom" constant="29" id="Kfg-2o-iL2"/>
+                            <constraint firstItem="nNe-iF-ArP" firstAttribute="centerX" secondItem="o3I-x2-aUe" secondAttribute="centerX" id="UW5-nA-htN"/>
+                            <constraint firstItem="xcB-eY-DiQ" firstAttribute="trailing" secondItem="xtr-St-xdp" secondAttribute="trailing" constant="45" id="VUr-U2-rlA"/>
+                            <constraint firstItem="hGu-hv-5m6" firstAttribute="top" secondItem="nNe-iF-ArP" secondAttribute="bottom" constant="80" id="YLB-lT-TNA"/>
+                            <constraint firstItem="xtr-St-xdp" firstAttribute="leading" secondItem="gJk-gV-bpR" secondAttribute="trailing" constant="27" id="dL4-9b-MH9"/>
+                            <constraint firstItem="tjf-A3-6Z2" firstAttribute="leading" secondItem="xcB-eY-DiQ" secondAttribute="leading" constant="45" id="hcZ-qv-CIR"/>
+                            <constraint firstItem="tjf-A3-6Z2" firstAttribute="top" secondItem="nNe-iF-ArP" secondAttribute="bottom" constant="88" id="ioL-H3-S7e"/>
+                            <constraint firstItem="nNe-iF-ArP" firstAttribute="top" secondItem="xcB-eY-DiQ" secondAttribute="top" constant="200" id="iwO-C6-QBo"/>
+                            <constraint firstItem="gJk-gV-bpR" firstAttribute="top" secondItem="tjf-A3-6Z2" secondAttribute="bottom" constant="32" id="mvk-fa-T1I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="nNe-iF-ArP" id="0Nr-XS-oTb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Gh-Lp-suo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="30.803571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="instagram_logo" width="255" height="108"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
