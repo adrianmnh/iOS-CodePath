@@ -23,4 +23,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/Parstagram/walkthrough1-1.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
+<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/Parstagram/walkthrough1-1.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /><img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/Parstagram/walkthrough1-2.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /><img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/Parstagram/walkthrough1-3.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /><img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/Parstagram/walkthrough1-4.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
