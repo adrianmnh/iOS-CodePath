@@ -11,7 +11,7 @@ import Parse
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -25,8 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         Parse.initialize(with: parseConfig)
         
+        let a = PFUser.current()
+        
+        
         // --- end copy
-
 
         return true
     }
