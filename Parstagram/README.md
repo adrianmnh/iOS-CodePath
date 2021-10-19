@@ -28,7 +28,7 @@ Here's a walkthrough of implemented user stories:
 
     User can post comments          -         User can view posted comments
 
-<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/Parstagram/walkthrough2-3.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /><img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/Parstagram/walkthrough2-4.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
+<img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/Parstagram/walkthrough2-5.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' /><img src='https://github.com/nlawliet6/iOS-CodePath/blob/main/Parstagram/walkthrough2-4.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
 
 
 # Parstagram - Part I

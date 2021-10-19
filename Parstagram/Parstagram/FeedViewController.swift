@@ -75,6 +75,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
         
+        tableView.reloadData()
+        
         //clear and dismiss input bar
         commentBar.inputTextView.text = nil
         showsCommentBar = false
