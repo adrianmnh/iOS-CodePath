@@ -55,7 +55,7 @@ class LoginViewController: UIViewController {
                 self.signIn()
                 //self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
-                print("Error: \(error?.localizedDescription)")
+                print(String(describing: "Error: \(error?.localizedDescription)"))
             }
         }
         
