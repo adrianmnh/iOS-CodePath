@@ -1,6 +1,6 @@
 # *Adrian's Tip Calculator*
 
-**Tip Calculator** is a tip calculator application for iOS, created to help foodies estimate the amount to tip wait staff when dining out.
+**Tip Calculator** is an iOS app, created to help foodies estimate the amount to tip wait staff when dining out.
 
 Submitted by: **Adrian Noa**
 
